@@ -1,7 +1,7 @@
 defmodule Periodically.MacroWorker do
-  require Periodically.Macro
+  import Periodically.Macro
 
-  Periodically.Macro.periodically_macro(3) do
+  periodically_macro(3) do
     IO.puts("Macro is still working")
   end
 end

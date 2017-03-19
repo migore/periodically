@@ -1,4 +1,5 @@
 defmodule Periodically.Macro do
+
   defmacro periodically_macro(time, do: expression) do
     quote do
       use GenServer
